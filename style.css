@@ -15,8 +15,8 @@
 /* login */
 /* Bordered form */
 form {
-  width: 25%;
-  height: 400px;
+  width: 28%;
+  height: 720px;
   display: flex;
   flex-direction: column;
   margin-left: 40%;
@@ -31,8 +31,8 @@ form {
 
 /* Full-width inputs */
 input[type=text], input[type=password], input[type=number]{
-  width: 100%;
-  margin: 5% auto;
+  width: 95%;
+  margin: 7%;
   margin-bottom: 8% auto;
   border: none;
   outline: none;
@@ -43,6 +43,48 @@ input[type=text], input[type=password], input[type=number]{
   border-radius:3px ;
   box-sizing: border-box;
 }
+
+#font1 i{
+  margin: 0;
+  visibility: hidden;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 290px;
+}
+#done label{
+  padding-left: 20px;
+}
+#done i{
+  margin: 0;
+  position: absolute;
+  visibility: hidden;
+  margin-top: 8px;
+  margin-left: -5px;
+
+}
+
+/* sign */
+
+input:focus{
+  outline: none;
+  border-color: aqua;
+
+}
+.success input{
+  border-color: rgb(26, 245, 26);
+}
+.erro input{
+  border-color: red;
+}
+#font i{
+  margin: 0;
+  visibility: hidden;
+  position: absolute;
+  margin-top: -47px;
+  margin-left: 330px;
+}
+
+
 
 /* Set a style for all buttons */
 .container button {
@@ -82,7 +124,7 @@ button:hover {
 .container {
   font-size: 20px;
   color: white;
-  margin-left: 10%;
+  margin: 3%;
   opacity: 10;
   text-shadow: 2px 2px 4px rgb(10, 6, 224);
 }
@@ -95,7 +137,7 @@ button:hover {
   color: white;
   margin: 5%;
   opacity: 10;
-  text-shadow: 2px 2px 4px rgb(114, 114, 114);
+  text-shadow: 2px 2px 4px rgb(32, 9, 235);
 }
 .abhi button{
   color: white;
@@ -115,14 +157,34 @@ button:hover {
   border-left: 1px solid  rgba(30, 5, 253, 0.514);
   border-top: 1px solid  rgba(5, 28, 230, 0.479);
 }
-
+/* sign up */
 .kutty{
-  width: 29%;
-  height: 560px;
+  margin-left: 35%;
+  width: 32%;
+  height: 1000px;
 }
 .abhirami h2{
   text-align: center;
   text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+  margin: 3%;
+  opacity: 10;
+  text-shadow: 2px 2px 4px rgb(32, 9, 235);
+}
+#strength{
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+#strength span{
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  background-color: aliceblue;
+  border-radius: 5px;
 }
 
 

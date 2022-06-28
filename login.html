@@ -6,27 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body style="background-image: url(./image/bubble\ 3.jpg);background-attachment: fixed; background-size: 100% 100%; ">
         
         <!-- login page -->
-<form action="action_page.php" method="post">
+<form action="index.html" onsubmit="return vali();">
   <div class="imgcontainer">
     <h2>LOGIN</h2>
   </div>
 
     <div class="container">
-      <label for="uname"><b>Email</b></label>
-      <input type="text" placeholder="Username@gmail.com" name="uname" required>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Email</b></label>
+      <label for="error"id="error"></label>
+      <input type="text" placeholder="Username@gmail.com" id="email">
+      <div id="font1">
+        <i id="chec1" class="fas fa-check-circle"></i>
+        <i id="exc1" class="fas fa-exclamation-circle"></i>
+      </div>
+      
+      <label><b>Password</b></label>
+      <div id="done">
+        <i id="done1" class="fas fa-check-circle"></i>
+        <i id="wrong1" class="fas fa-exclamation-circle"></i>
+        <label for="error"id="erro1">Password must have at least one Uppercase Character.</label>
+        
+        <br>
+        <i id="done2" class="fas fa-check-circle"></i>
+        <i id="wrong2" class="fas fa-exclamation-circle"></i>
+        <label for="error"id="erro2">Password must have at least one Lowercase Character</label>
+       
+        <br>
+        <i id="done3" class="fas fa-check-circle"></i>
+        <i id="wrong3" class="fas fa-exclamation-circle"></i>
+        <label for="error"id="erro3">Password must contain at least one Digit</label>
+     
+      </div>
+      <input type="password" placeholder="Enter Password" id="pwd">
+      <div id="font1">
+        <i id="chec2" class="fas fa-check-circle"></i>
+        <i id="exc2" class="fas fa-exclamation-circle"></i>
+      </div>
       <label>
         <input type="checkbox" checked="checkbox" name="remember"> Remember me
       </label>
-      <button type="submit">Login</button>
+        <button id="submit" >Login</button>
       <br>
     </div>
   
